@@ -1,5 +1,4 @@
 
-# *This project has been created as partof the 42 curriculum by mhoumman.*
 
 ```get_next_line``` is a project that provides a function able to ***read a file one line at a time***.
 Each call returns the next line from the file until the end is reached.
