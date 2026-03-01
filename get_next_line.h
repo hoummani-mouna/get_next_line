@@ -25,7 +25,7 @@
 char	*get_next_line(int fd);
 int		found_new_line(char *res);
 char	*update_res(char *res, int i);
-char	*help(int fd, char *res);
+char	*read_line(int fd, char *res);
 size_t	ft_strlen(const char *str);
 char	*ft_strdup(char const *str);
 char	*ft_strjoin(char *s1, char const *s2);
