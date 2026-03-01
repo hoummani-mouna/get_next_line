@@ -45,7 +45,7 @@ char	*update_res(char *res, int i)
 	return (res);
 }
 
-char	*help(int fd, char *res)
+char	*read_line(int fd, char *res)
 {
 	char	*buff;
 	int		x;
@@ -85,7 +85,7 @@ char	*get_next_line(int fd)
 		return (NULL);
 	if (read(fd, NULL, 0) == -1)
 		return (free(res), res = NULL, NULL);
-	res = help(fd, res);
+	res = read_line(fd, res);
 	if (!res || res[0] == '\0')
 		return (free(res), res = NULL, NULL);
 	i = found_new_line(res);
